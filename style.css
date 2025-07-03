@@ -1,4 +1,6 @@
 body {
+  height: 100vh;
+  width: 100vw;
   font-family: serif;
 }
 body.dark {
@@ -9,16 +11,17 @@ body.light {
   background: #ffffff;
   color: #0b2b40;
 }
-ol li {
+.mode-btn ol {
   display: flex;
-  padding-left: 1800px;
+  width: 0.1vw;
+  height: 0.1vh;
 }
 
 ol li button {
   margin: 0%;
   padding: 0;
-  height: 40px;
-  width: 80px;
+  height: 1%;
+  width: 35px;
   border-radius: 50%;
   border: none;
   background-color: transparent;
@@ -36,16 +39,16 @@ footer {
   background-color: #164766;
   color: white;
   height: 11vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
 main div.header {
-  flex: 1;
   display: flex;
   justify-content: space-between;
+  font-size: small;
 }
 div.right {
-  padding-right: 120px;
   display: flex;
   place-items: center;
 }
@@ -54,16 +57,20 @@ div.right a {
   text-decoration: none;
   color: whitesmoke;
 }
+div.right a:hover {
+  background-color: #164760;
+  color: #000;
+  opacity: 80%;
+}
 div.left img {
-  padding: 10px;
   height: 9vh;
   width: 6vw;
-  padding-left: 120px;
+  padding: 10px;
 }
 div.content {
+  padding-top: 20vh;
   font-family: sans-serif;
   place-items: center;
-  padding-top: 20px;
 }
 div.name {
   color: #4ca0e0;
@@ -126,6 +133,16 @@ div.social-media {
   gap: 5px;
   padding-left: 220px;
 }
+div.social-media img {
+  padding-left: 20px;
+}
+div.social-media img:hover {
+  background-color: transparent;
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+  border: 0.000000001rem solid black;
+  border-radius: 50px;
+}
 .contact-details div {
   display: flex;
 }
@@ -146,12 +163,19 @@ div.social-media {
 div.image-layout {
   border: 2px solid #0b2b70;
   background-color: #0b2b70;
+  color: white;
   border-radius: 20px;
 }
 .image-layout a img {
   height: 400px;
   width: 350px;
   border-radius: 20px;
+}
+.image-layout a img:hover {
+  background-color: black;
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+  border: 5px solid #0b2b70;
 }
 div.image-layout .title h3 {
   text-align: center;
@@ -203,4 +227,10 @@ div#foto p {
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
   width: 120ch;
+}
+.info {
+  display: flex;
+  gap: 2rem;
+}
+.info h3 {
 }
