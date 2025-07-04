@@ -1,6 +1,3 @@
-//alert("Wola, Ntanga!");//
-//document.querySelector('lightbtn').onclick = function () {document.querySelector('body').classList.toggle('light');}
-//document.querySelector('darkbtn').onclick = function () {document.querySelector('body').classList.toggle('dark');}
 const lightbtn = document.getElementById("lightbtn");
 const darkbtn = document.getElementById("darkbtn");
 lightbtn.addEventListener("click", () => {
