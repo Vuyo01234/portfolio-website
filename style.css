@@ -1,7 +1,22 @@
+html,
 body {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #164766;
+}
+#scale-wrapper {
   width: 100vw;
-  font-family: serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #164766;*/
+}
+
+#content {
+  width: 1024px;
+  height: 768px;
+  transform-origin: top;
 }
 body.dark {
   background-color: #0b2b40;
@@ -39,7 +54,7 @@ footer {
   background-color: #164766;
   color: white;
   height: 11vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +83,7 @@ div.left img {
   padding: 10px;
 }
 div.content {
-  padding-top: 20vh;
+  padding-top: 10vh;
   font-family: sans-serif;
   place-items: center;
 }
@@ -89,8 +104,8 @@ button {
   background-color: #0b2b70;
   border: #0b2b40;
   border-radius: 25px;
-  width: 200px;
-  height: 50px;
+  width: 10vw;
+  height: 5vh;
 }
 
 button a {
@@ -148,8 +163,6 @@ div.social-media img:hover {
 }
 
 .project-content {
-  padding-top: 120px;
-  padding-bottom: 60px;
   place-items: center;
 }
 .top,
@@ -167,8 +180,8 @@ div.image-layout {
   border-radius: 20px;
 }
 .image-layout a img {
-  height: 400px;
-  width: 350px;
+  height: 30vh;
+  width: 25vh;
   border-radius: 20px;
 }
 .image-layout a img:hover {
